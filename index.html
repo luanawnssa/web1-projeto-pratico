@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Minha Página - Luana Wanessa</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <header>
+      <h1>Luana Wanessa</h1>
+      <h2>Disciplina: Desenvolvimento de Sistemas Web I - ADS</h2>
+   </header>
+
+   <main>
+      <!-- Seção sobre-->
+      <section class="sobre">
+         <p>Me chamo <strong>Luana Wanessa</strong>, tenho 24 anos e sou estudante do 3º período de ADS no IFPE.</p>
+         <img src="foto.jpg" alt="Foto de Luana Wanessa (Moana)" class="foto">
+      </section>
+
+      <!--Interesses, hobbies e informações pessoais -->
+      <section class="blocos-info">
+         <div class="interesses">
+            <h3>🎧 Meus Interesses</h3>
+            <ul>
+               <li>Leitura de livros de ficção, fantasia e romance;</li>
+               <li>Ouvir música o tempo todo;</li>
+               <li>Reassistir minhas séries favoritas.</li>
+            </ul>
+         </div>
+
+         <div class="hobbies">
+            <h3>🎨 Hobbies</h3>
+            <ol>
+               <li>Leitura</li>
+               <li>Ouvir música</li>
+               <li>Pintura</li>
+            </ol>
+         </div>
+
+         <div class="tabela">
+            <h4>📋 Informações Pessoais</h4>
+            <table>
+               <caption>Dados básicos</caption>
+               <thead>
+                  <tr>
+                     <th>Nome</th>
+                     <th>Idade</th>
+                     <th>Gênero</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Luana Wanessa</td>
+                     <td>24 anos</td>
+                     <td>Feminino</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </section>
+
+      <!-- Links da música -->
+      <section class="links">
+         <h4>🎵 Música Aleatória</h4>
+         <a href="https://youtu.be/iojYDSjKK00?feature=shared" target="_blank" class="link-musica">Ouvir no YouTube</a><br>
+            <img src="foto.jpg" alt="Clique para ouvir música" class="foto-link">
+         </a>
+      </section>
+
+      <!-- Formulário -->
+      <section class="formulario">
+         <h2>📝 Formulário</h2>
+         <form action="action_page.php" method="post">
+            <fieldset>
+               <legend>Informações Pessoais</legend>
+
+               <label for="nome">Nome:</label>
+               <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+               <label for="genero">Selecione seu gênero:</label>
+               <select id="genero" name="genero" required>
+                  <option value="">Selecione</option>
+                  <option value="feminino">Feminino</option>
+                  <option value="masculino">Masculino</option>
+                  <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+               </select>
+
+               <p>Orientação Sexual:</p>
+               <div class="radio-group">
+                  <label><input type="radio" name="orientacao" value="heterossexual"> Heterossexual</label>
+                  <label><input type="radio" name="orientacao" value="lgbtqia+"> LGBTQIA+</label>
+                  <label><input type="radio" name="orientacao" value="outro"> Outro</label>
+               </div>
+
+               <label for="senha">Senha:</label>
+               <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+
+               <label for="confirmarSenha">Confirmar Senha:</label>
+               <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" required>
+
+               <label>
+                 <input type="checkbox" id="mostrarSenha"> Mostrar senha
+               </label>
+
+               <label for="mensagem">Mensagem:</label>
+               <textarea id="mensagem" name="mensagem" rows="4" placeholder="Deixe sua mensagem..."></textarea>
+
+               <div class="botoes">
+                  <input type="reset" value="Limpar">
+                  <input type="submit" value="Enviar">
+               </div>
+            </fieldset>
+         </form>
+      </section>
+
+      <!-- Redes sociais -->
+      <section class="redes-sociais">
+         <h4>🔗 Minhas Redes</h4>
+         <a href="https://www.instagram.com/luanawnssa/?next=%2F" target="_blank">Instagram</a> |
+         <a href="https://github.com/luanawnssa" target="_blank">GitHub</a>
+      </section>
+
+   </main>
+
+   <footer>
+      <p>© 2025 - Desenvolvido por Luana Wanessa</p>
+   </footer>
+</body>
+</html>

@@ -1,0 +1,220 @@
+/* --- configurações gerais--- */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fcfff9; 
+  color: #1b5e20;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #fcfff9;
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 2px solid #d7f0d8;
+  transition: all 0.3s ease;
+}
+
+header h1 {
+  margin: 0;
+  color: #2e7d32;
+  font-size: 2.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+header h1:hover {
+  color: #388e3c;
+  transform: scale(1.05);
+}
+
+header h2 {
+  color: #1b5e20;
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+/* ---seção sobre --- */
+.sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.foto, .foto-link {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 180px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.foto:hover, .foto-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* --- blocos em colunas ---- */
+.blocos-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.blocos-info > div {
+  flex: 0 1 30%;
+  min-width: 250px;
+  background: linear-gradient(135deg, #eafbee, #d4f5d8);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  cursor: pointer;
+}
+
+.blocos-info > div:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  background: linear-gradient(135deg, #d4f5d8, #bdf0c3);
+}
+
+/* --- listas--- */
+li {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+li:hover {
+  background-color: #e0f7e5;
+  border-radius: 5px;
+  transform: scale(1.02);
+}
+
+/* --- links --- */
+.link-musica, .redes-sociais a {
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: bold;
+  transition: transform 0.3s, text-decoration 0.3s, color 0.3s;
+}
+
+.link-musica:hover, .redes-sociais a:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  color: #388e3c;
+}
+
+/* --- formulario --- */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+input, select, textarea {
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #b3e6c3;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #388e3c;
+  box-shadow: 0 0 6px rgba(56,142,60,0.3);
+  outline: none;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+input[type="submit"], input[type="reset"] {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  transform: rotate(-2deg) scale(1.05);
+  background-color: #388e3c;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* ---redes sociais--- */
+.redes-sociais {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.redes-sociais a {
+  margin: 0 5px;
+}
+
+/* --- botão do topo--- */
+.topo {
+  display: block;
+  text-align: center;
+  margin: 2rem 0;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2e7d32;
+  transition: transform 0.3s;
+}
+
+.topo:hover {
+  transform: scale(1.1);
+}
+
+/* ---rodapé--- */
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  background-color: #fcfff9;
+  color: #1b5e20;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+/* ---fade-in scroll--- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
