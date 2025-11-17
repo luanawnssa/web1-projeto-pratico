@@ -6,130 +6,206 @@
    <title>Minha Página - Luana Wanessa</title>
    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-   <header>
-      <h1>Luana Wanessa</h1>
-      <h2>Disciplina: Desenvolvimento de Sistemas Web I - ADS</h2>
-   </header>
+<div vw class="enabled">
+   <div vw-access-button class="active"></div>
+   <div vw-plugin-wrapper>
+       <div class="vw-plugin-top-wrapper"></div>
+   </div>
+</div>
 
-   <main>
-      <!-- Seção sobre-->
-      <section class="sobre">
-         <p>Me chamo <strong>Luana Wanessa</strong>, tenho 24 anos e sou estudante do 3º período de ADS no IFPE.</p>
-         <img src="foto.jpg" alt="Foto de Luana Wanessa (Moana)" class="foto">
-      </section>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+   new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
 
-      <!--Interesses, hobbies e informações pessoais -->
-      <section class="blocos-info">
-         <div class="interesses">
-            <h3>🎧 Meus Interesses</h3>
-            <ul>
-               <li>Leitura de livros de ficção, fantasia e romance;</li>
-               <li>Ouvir música o tempo todo;</li>
-               <li>Reassistir minhas séries favoritas.</li>
-            </ul>
-         </div>
 
-         <div class="hobbies">
-            <h3>🎨 Hobbies</h3>
-            <ol>
-               <li>Leitura</li>
-               <li>Ouvir música</li>
-               <li>Pintura</li>
-            </ol>
-         </div>
+<header>
+   <h1>Luana Wanessa</h1>
+   <h2>Disciplina: Desenvolvimento de Sistemas Web I - ADS</h2>
+</header>
 
-         <div class="tabela">
-            <h4>📋 Informações Pessoais</h4>
-            <table>
-               <caption>Dados básicos</caption>
-               <thead>
-                  <tr>
-                     <th>Nome</th>
-                     <th>Idade</th>
-                     <th>Gênero</th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td>Luana Wanessa</td>
-                     <td>24 anos</td>
-                     <td>Feminino</td>
-                  </tr>
-               </tbody>
-            </table>
-         </div>
-      </section>
+<main>
 
-      <!-- Links da música -->
-      <section class="links">
-         <h4>🎵 Música Aleatória</h4>
-         <a href="https://youtu.be/iojYDSjKK00?feature=shared" target="_blank" class="link-musica">Ouvir no YouTube</a><br>
-            <img src="foto.jpg" alt="Clique para ouvir música" class="foto-link">
-         </a>
-      </section>
+   <!-- Seção sobre -->
+   <section class="sobre">
+      <p>
+         Me chamo <strong>Luana Wanessa</strong>, tenho 24 anos e sou formada em Pedagogia. 
+         Atualmente, estou me aventurando pelo universo da tecnologia e cursando 
+         <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong>, no <strong>3º período</strong>.
+         <br> Sou apaixonada por aprender e estou sempre buscando novas formas de unir educação e tecnologia.
+      </p>
 
-      <!-- Formulário -->
-      <section class="formulario">
-         <h2>📝 Formulário</h2>
-         <form action="action_page.php" method="post">
-            <fieldset>
-               <legend>Informações Pessoais</legend>
+      <img src="foto.jpg" alt="Foto de Luana Wanessa" class="foto">
+   </section>
 
-               <label for="nome">Nome:</label>
-               <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+   <!-- Interesses, hobbies e informações pessoais -->
+   <section class="blocos-info">
 
-               <label for="email">Email:</label>
-               <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+      <!-- Interesses -->
+      <div class="interesses">
+         <h3>Meus Interesses</h3>
+         <ul>
+            <li>Melhorar minhas habilidades em programação;</li>
+            <li>Unir tecnologia à educação;</li>
+            <li>Leitura (ficção, fantasia e romance);</li>
+            <li>Explorar áreas da tecnologia como web, banco de dados e IA;</li>
+            <li>Participar de projetos práticos que desenvolvam minhas habilidades;</li>
+            <li>Aprender novas linguagens e ferramentas de desenvolvimento;</li>
+         </ul>
+      </div>
 
-               <label for="genero">Selecione seu gênero:</label>
-               <select id="genero" name="genero" required>
-                  <option value="">Selecione</option>
-                  <option value="feminino">Feminino</option>
-                  <option value="masculino">Masculino</option>
-                  <option value="prefiro-nao-dizer">Prefiro não dizer</option>
-               </select>
+      <!-- Hobbies -->
+      <div class="hobbies">
+         <h3>Hobbies e Gostos</h3>
+         <ol>
+            <li>Ouvir músicas para relaxar ou estudar;</li>
+            <li>Ir à praia e aproveitar o contato com a natureza;</li>
+            <li>Assistir séries e filmes (suspense, drama, fantasia e comédia);</li>
+            <li>Ler livros, principalmente ficção, fantasia e romance;</li>
+            <li>Organizar playlists e explorar coisas novas;</li>
+            <li>Passar tempo com amigos e família;</li>
+         </ol>
+      </div>
 
-               <p>Orientação Sexual:</p>
-               <div class="radio-group">
-                  <label><input type="radio" name="orientacao" value="heterossexual"> Heterossexual</label>
-                  <label><input type="radio" name="orientacao" value="lgbtqia+"> LGBTQIA+</label>
-                  <label><input type="radio" name="orientacao" value="outro"> Outro</label>
-               </div>
+      <!-- Tabela Informações para Contato -->
+      <div class="tabela">
+         <h4>Informações para Contato</h4>
 
-               <label for="senha">Senha:</label>
-               <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+         <table>
+            <caption>Dados de Contato e Perfil</caption>
 
-               <label for="confirmarSenha">Confirmar Senha:</label>
-               <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" required>
+            <thead>
+               <tr>
+                  <th>Campo</th>
+                  <th>Informação</th>
+               </tr>
+            </thead>
 
-               <label>
-                 <input type="checkbox" id="mostrarSenha"> Mostrar senha
-               </label>
+            <tbody>
+               <tr>
+                  <td>Nome</td>
+                  <td>Luana Wanessa</td>
+               </tr>
 
-               <label for="mensagem">Mensagem:</label>
-               <textarea id="mensagem" name="mensagem" rows="4" placeholder="Deixe sua mensagem..."></textarea>
+               <tr>
+                  <td>Email</td>
+                  <td>lwsl@discente.ifpe.edu.br</td>
+               </tr>
 
-               <div class="botoes">
-                  <input type="reset" value="Limpar">
-                  <input type="submit" value="Enviar">
-               </div>
-            </fieldset>
-         </form>
-      </section>
+               <tr>
+                  <td>Telefone</td>
+                  <td>(81) 98418-9056</td>
+               </tr>
 
-      <!-- Redes sociais -->
-      <section class="redes-sociais">
-         <h4>🔗 Minhas Redes</h4>
-         <a href="https://www.instagram.com/luanawnssa/?next=%2F" target="_blank">Instagram</a> |
-         <a href="https://github.com/luanawnssa" target="_blank">GitHub</a>
-      </section>
+               <tr>
+                  <td>Cidade</td>
+                  <td>Paulista – PE</td>
+               </tr>
 
-   </main>
+               <tr>
+                  <td>Formação</td>
+                  <td>Pedagogia</td>
+               </tr>
 
-   <footer>
-      <p>© 2025 - Desenvolvido por Luana Wanessa</p>
-   </footer>
+               <tr>
+                  <td>Curso Atual</td>
+                  <td>Análise e Desenvolvimento de Sistemas</td>
+               </tr>
+
+               <tr>
+                  <td>Período</td>
+                  <td>3º Período</td>
+               </tr>
+
+               <tr>
+                  <td>Disponibilidade</td>
+                  <td>Projetos, estudos e colaborações</td>
+               </tr>
+            </tbody>
+
+         </table>
+      </div>
+
+   </section>
+
+   <!-- Música -->
+   <section class="links">
+      <h4>Música Aleatória</h4>
+      <a href="https://youtu.be/kXi-eu1g6dU?si=9sLx5unAbxUMsM_Z" target="_blank" class="link-musica">
+         Ouvir no YouTube
+      </a>
+      <br>
+      <img src="foto.jpg" alt="Clique para ouvir música" class="foto-link">
+   </section>
+
+   <section id="contato" class="form-container">
+    <h2>Entre em Contato</h2>
+
+    <form action="#" method="post">
+        
+        <div class="form-group">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="telefone">Telefone (opcional):</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+        </div>
+
+        <div class="form-group">
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="duvida">Dúvida</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="parceria">Parceria</option>
+                <option value="suporte">Suporte</option>
+                <option value="elogio">Elogio</option>
+                <option value="outro">Outro</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Como deseja receber a resposta?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="contato_pref" value="email" required> E-mail</label>
+                <label><input type="radio" name="contato_pref" value="whatsapp"> WhatsApp</label>
+            </div>
+        </div>
+
+        <!-- Botão -->
+        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+
+    </form>
+</section>
+
+
+   <!-- Redes sociais -->
+   <section class="redes-sociais">
+      <h4>Minhas Redes</h4>
+      <a href="https://www.instagram.com/luanawnssa/?next=%2F" target="_blank">Instagram</a> |
+      <a href="https://github.com/luanawnssa" target="_blank">GitHub</a>
+   </section>
+
+</main>
+
+<footer>
+   <p>© 2025 - Desenvolvido por Luana Wanessa</p>
+</footer>
+
 </body>
 </html>
